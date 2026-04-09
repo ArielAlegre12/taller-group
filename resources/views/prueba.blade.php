@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    @include('nav.blade.php')
+    <div class="container">
+        @include('nav')
+        
+    </div>
 </body>
 </html>
