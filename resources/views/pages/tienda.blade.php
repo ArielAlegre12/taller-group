@@ -1,6 +1,12 @@
 @extends('layouts.app')
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/tiendaStyle.css') }}">
+@endpush
+@section('title')
+Tienda
+@endsection
 @section('content')
-    <div>
+    <div class="contenedor-categoria">
         <h4>Categoría</h5>
             <div>
                 <div>
