@@ -17,3 +17,7 @@ Route::get('/principal', function () {
 Route::get('/tienda', function(){
     return view('pages/tienda');
 });
+
+Route::get('/servicios', function(){
+    return view('pages/servicios');
+});
