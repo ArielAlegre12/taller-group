@@ -6,44 +6,51 @@
     Tienda
 @endsection
 @section('content')
-    <div class="contenedor-categoria">
-        <h4>Categoría</h5>
-            <div>
-                <div>
-                    <h5>Aliminentos y Nutrición</h5>
-                    <ul>
-                        <li>Aliminetos concentrados</li>
-                        <li>Snacks y premios</li>
-                        <li>suplementos</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Higene y Cuidado de la Mascota</h5>
-                    <ul>
-                        <li>Champús y acondicionadores</li>
-                        <li>Antipulgas y desparasitantes</li>
-                        <li>cuidado oral y limpieza</li>
-                        <li>Arena para gatos</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Accesorios y Accesorios de Paseo</h5>
-                    <ul>
-                        <li>Correas, collares y pecheras</li>
-                        <li>Juguetes</li>
-                        <li>Camas y mantas</li>
-                        <li>Transportadoras y bolsos</li>
-                        <li>Comederos y bebederos</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Productos de Farmacia(Venta Libre)</h5>
-                    <ul>
-                        <li>Collares isabelinos</li>
-                        <li>Lociones, perfumes y productos desenrededantes</li>
-                        <li>productos de higene general</li>
-                    </ul>
-                </div>
+    <div class="tienda-container">
+
+        <!--SIDEBAR-->
+        <aside class="sidebar">
+            <h4>Categorías</h4>
+            <ul>
+                <li onclick="filtrar('todos', this)" class="activo">Todos</li>
+                <li onclick="filtrar('alimentos', this)">Alimentos</li>
+                <li onclick="filtrar('higiene', this)">Higiene</li>
+                <li onclick="filtrar('accesorios', this)">Accesorios</li>
+                <li onclick="filtrar('salud', this)">Salud</li>
+            </ul>
+        </aside>
+
+        <!--PRODUCTOS-->
+        <main class="productos" id="contenedor-productos">
+
+            <div class="card-producto" data-categoria="alimento">
+                <img src="https://via.placeholder.com/150">
+                <h6>Alimento para perro</h6>
+                <p>$3500</p>
+                <button>Agregar</button>
             </div>
+
+            <div class="card-producto" data-categoria ="higiene">
+                <img src="https://via.placeholder.com/150">
+                <h6>Shampoo antipulgas</h6>
+                <p>$2200</p>
+                <button>Agregar</button>
+            </div>
+
+            <div class="card-producto" data-categoria="accesorios">
+                <img src="https://via.placeholder.com/150">
+                <h6>Snack para gato</h6>
+                <p>$900</p>
+                <button>Agregar</button>
+            </div>
+
+            <div class="card-producto" data-categoria="salud">
+                <img src="https://via.placeholder.com/150">
+                <h6>Antiparasitario de Amplio Espectro</h6>
+                <p>$1000</p>
+                <button>Agregar</button>
+            </div>
+
+        </main>
     </div>
 @endsection
