@@ -18,18 +18,20 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Quienes somos</a>
+                        aria-expanded="false">Info</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Información de contactos</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Términos y Uso</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Consultas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Quienes somos</a></li>
                     </ul>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>
