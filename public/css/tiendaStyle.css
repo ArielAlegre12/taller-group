@@ -53,6 +53,8 @@
 }
 .card-producto:hover{
     transform: translateY(-5px);
+    background: #28a745 ;
+    box-shadow: 0 5px 15px rgba(255, 3, 3, 0.1);
 }
 /*imagen*/
 .card-producto img{

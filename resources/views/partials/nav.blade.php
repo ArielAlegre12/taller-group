@@ -20,13 +20,13 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Info</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Información de contactos</a></li>
+                        <li><a class="dropdown-item" href="informacionContactos">Información de contactos</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Términos y Uso</a></li>
+                        <li><a class="dropdown-item" href="terminosUsos">Términos y Uso</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Consultas</a></li>
+                        <li><a class="dropdown-item" href="consultas">Consultas</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Quienes somos</a></li>
+                        <li><a class="dropdown-item" href="quienesSomos">Quienes somos</a></li>
                     </ul>
                 </li>
             </ul>
