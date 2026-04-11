@@ -12,11 +12,11 @@
         <aside class="sidebar">
             <h4>Categorías</h4>
             <ul>
-                <li onclick="filtrar('todos', this)" class="activo">Todos</li>
-                <li onclick="filtrar('alimentos', this)">Alimentos</li>
-                <li onclick="filtrar('higiene', this)">Higiene</li>
-                <li onclick="filtrar('accesorios', this)">Accesorios</li>
-                <li onclick="filtrar('salud', this)">Salud</li>
+                <li data-categoria="todos" class="activo">Todos</li>
+                <li data-categoria="alimentos">Alimentos</li>
+                <li data-categoria="higiene">Higiene</li>
+                <li data-categoria="accesorios">Accesorios</li>
+                <li data-categoria="salud">Salud</li>
             </ul>
         </aside>
 
@@ -29,9 +29,9 @@
                 <p>Alimento Old Prince Premium Raza Mediana - 20 Kg</p>
                 <p><strong>$3500</strong></p>
                 <div class="cantidad">
-                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <button>-</button>
                     <span class="numero">1</span>
-                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                    <button>+</button>
                 </div>
                 <button>Agregar</button>
             </div>
@@ -42,9 +42,9 @@
                 <p>Shampoo Perro Porta Cachorro Hipoalergenico</p>
                 <p><strong>$2200</strong></p>
                 <div class="cantidad">
-                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <button>-</button>
                     <span class="numero">1</span>
-                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                    <button>+</button>
                 </div>
                 <button>Agregar</button>
             </div>
@@ -55,9 +55,9 @@
                 <p>Snack Moisty Cream Zootec Sabor Pollo x5 Uds</p>
                 <p><strong>$900</strong></p>
                 <div class="cantidad">
-                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <button>-</button>
                     <span class="numero">1</span>
-                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                    <button>+</button>
                 </div>
                 <button>Agregar</button>
             </div>
@@ -68,9 +68,9 @@
                 <p>Antiparasitario Simparica 120 Mg - Simparica 40-60 Kg</p>
                 <p><strong>$1000</strong></p>
                 <div class="cantidad">
-                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <button>-</button>
                     <span class="numero">1</span>
-                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                    <button>+</button>
                 </div>
                 <button>Agregar</button>
             </div>
@@ -81,9 +81,9 @@
                 <p>Collar Zeedog Neopro Amazonia - Zeedog 31x1,5 cm</p>
                 <p><strong>$300</strong></p>
                 <div class="cantidad">
-                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <button>-</button>
                     <span class="numero">1</span>
-                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                    <button>+</button>
                 </div>
                 <button>Agregar</button>
             </div>

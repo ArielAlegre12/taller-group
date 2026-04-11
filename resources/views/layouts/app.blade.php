@@ -11,11 +11,13 @@
     
     
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include('partials.nav')
-    <main>
+
+    <main class="flex-grow-1">
         @yield('content')
     </main>
+    
     <footer class="text-center mt-5 mb-3">
         <small>@ {{ date('Y') }} - Huellas Felices</small>
     </footer>
