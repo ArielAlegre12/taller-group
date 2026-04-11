@@ -23,34 +23,74 @@
         <!--PRODUCTOS-->
         <main class="productos" id="contenedor-productos">
 
-            <div class="card-producto" data-categoria="alimento">
-                <img src="https://via.placeholder.com/150">
-                <h6>Alimento para perro</h6>
-                <p>$3500</p>
+            <div class="card-producto" data-categoria="alimentos">
+                <img
+                    src="https://puppis.vtexassets.com/arquivos/ids/189030-1600-1600?v=637965320413700000&width=1600&height=1600&aspect=true">
+                <p>Alimento Old Prince Premium Raza Mediana - 20 Kg</p>
+                <p><strong>$3500</strong></p>
+                <div class="cantidad">
+                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <span class="numero">1</span>
+                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                </div>
                 <button>Agregar</button>
             </div>
 
-            <div class="card-producto" data-categoria ="higiene">
-                <img src="https://via.placeholder.com/150">
-                <h6>Shampoo antipulgas</h6>
-                <p>$2200</p>
+            <div class="card-producto" data-categoria="higiene">
+                <img
+                    src="https://puppis.vtexassets.com/arquivos/ids/158352-500-auto?v=635991063099030000&width=500&height=auto&aspect=true">
+                <p>Shampoo Perro Porta Cachorro Hipoalergenico</p>
+                <p><strong>$2200</strong></p>
+                <div class="cantidad">
+                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <span class="numero">1</span>
+                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                </div>
                 <button>Agregar</button>
             </div>
 
-            <div class="card-producto" data-categoria="accesorios">
-                <img src="https://via.placeholder.com/150">
-                <h6>Snack para gato</h6>
-                <p>$900</p>
+            <div class="card-producto" data-categoria="alimentos">
+                <img
+                    src="https://puppis.vtexassets.com/arquivos/ids/189017-500-auto?v=637965304397000000&width=500&height=auto&aspect=true">
+                <p>Snack Moisty Cream Zootec Sabor Pollo x5 Uds</p>
+                <p><strong>$900</strong></p>
+                <div class="cantidad">
+                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <span class="numero">1</span>
+                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                </div>
                 <button>Agregar</button>
             </div>
 
             <div class="card-producto" data-categoria="salud">
-                <img src="https://via.placeholder.com/150">
-                <h6>Antiparasitario de Amplio Espectro</h6>
-                <p>$1000</p>
+                <img
+                    src="https://puppis.vtexassets.com/arquivos/ids/188676-500-auto?v=637951316267300000&width=500&height=auto&aspect=true">
+                <p>Antiparasitario Simparica 120 Mg - Simparica 40-60 Kg</p>
+                <p><strong>$1000</strong></p>
+                <div class="cantidad">
+                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <span class="numero">1</span>
+                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                </div>
+                <button>Agregar</button>
+            </div>
+
+            <div class="card-producto" data-categoria="accesorios">
+                <img
+                    src="https://puppis.vtexassets.com/arquivos/ids/201343-1600-1600?v=638888853453230000&width=1600&height=1600&aspect=true">
+                <p>Collar Zeedog Neopro Amazonia - Zeedog 31x1,5 cm</p>
+                <p><strong>$300</strong></p>
+                <div class="cantidad">
+                    <button onclick="cambiarCantidad(this, -1)">-</button>
+                    <span class="numero">1</span>
+                    <button onclick="cambiarCantidad(this, 1)">+</button>
+                </div>
                 <button>Agregar</button>
             </div>
 
         </main>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/tiendaMain.js') }}"></script>
+@endpush
