@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Huellas Felices</a>
+        <a class="navbar-brand fw-bold" href="#">Huellas Felices</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#huellas-felices"
             aria-controls="huellas-felices" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,32 +9,45 @@
         <div class="collapse navbar-collapse" id="huellas-felices">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="principal">Principal</a>
+                    <a class="nav-link {{ request()->is('principal') ? 'active' : '' }}" aria-current="page" href="principal">Principal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tienda">Tienda</a>
+                    <a class="nav-link {{ request()->is('tienda') ? 'active' : '' }}" href="tienda">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios">Servicios</a>
+                    <a class="nav-link {{ request()->is('servicios') ? 'active' : '' }}" href="servicios">Servicios</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Info</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="informacionContactos">Información de contactos</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="terminosUsos">Términos y Uso</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="consultas">Consultas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="quienesSomos">Quienes somos</a></li>
+                        <li><a class="dropdown-item {{ request()->is('informacionContactos') ? 'active' : '' }}" href="informacionContactos">Información de contactos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item {{ request()->is('terminosUsos') ? 'active' : '' }}" href="terminosUsos">Términos y Uso</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item {{ request()->is('consultas') ? 'active' : '' }}" href="consultas">Consultas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item {{ request()->is('quienesSomos') ? 'active' : '' }}" href="quienesSomos">Quienes somos</a></li>
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <div class="d-flex align-items-center gap-3">
+                <!--carrito-->
+                <div class="carrito-icono">
+                    <i class="bi bi-cart"></i>
+                    <span class="badge bg-light text-dark">0</span>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
     </div>
 </nav>
