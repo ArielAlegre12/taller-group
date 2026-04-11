@@ -26,18 +26,30 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item {{ request()->is('terminosUsos') ? 'active' : '' }}"
-                                href="terminosUsos">Términos y Uso</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+
                         <li><a class="dropdown-item {{ request()->is('consultas') ? 'active' : '' }}"
                                 href="consultas">Consultas</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
+
+                        <li><a class="dropdown-item {{ request()->is('comercializacion') ? 'active' : '' }}"
+                                href="comercializacion">Comercialización</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
                         <li><a class="dropdown-item {{ request()->is('quienesSomos') ? 'active' : '' }}"
                                 href="quienesSomos">Quienes somos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item {{ request()->is('terminosUsos') ? 'active' : '' }}"
+                                href="terminosUsos">Términos y Uso</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                     </ul>
                 </li>
             </ul>

@@ -8,29 +8,33 @@ Route::get('/', function () {
 });
 
 Route::get('/principal', function () {
-    return view('pages/principal');
+    return view('pages.principal');
 });
 
-Route::get('/tienda', function(){
-    return view('pages/tienda');
+Route::get('tienda', function(){
+    return view('pages.tienda');
 });
 
 Route::get('/servicios', function(){
-    return view('pages/servicios');
+    return view('pages.servicios');
 });
 
 Route::get('/informacionContactos', function(){
-    return view('pages/informacionContactos');
+    return view('pages.informacionContactos');
 });
 
 Route::get('/terminosUsos', function(){
-    return view('pages/terminosUsos');
+    return view('pages.terminosUsos');
 });
 
 Route::get('/consultas', function(){
-    return view('pages/consultas');
+    return view('pages.consultas');
 });
 
 Route::get('/quienesSomos', function(){
-    return view('pages/quienesSomos');
+    return view('pages.quienesSomos');
+});
+
+Route::get('/comercializacion', function(){
+    return view('pages.comercializacion');
 });
