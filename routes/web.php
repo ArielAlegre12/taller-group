@@ -16,7 +16,7 @@ Route::get('tienda', function(){
 });
 
 Route::get('/servicios', function(){
-    return view('pages.servicios');
+    return view('pages.turnos.servicios');
 });
 
 Route::get('/informacionContactos', function(){
@@ -38,3 +38,11 @@ Route::get('/quienesSomos', function(){
 Route::get('/comercializacion', function(){
     return view('pages.comercializacion');
 });
+
+Route::get('/servicios/produccion', function(){
+    return view('pages.turnos.produccion');
+})->name('pages.turnos.produccion');
+
+Route::get('/servicios/domestico', function(){
+    return view('pages.turnos.domestico');
+})->name('pages.turnos.domestico');

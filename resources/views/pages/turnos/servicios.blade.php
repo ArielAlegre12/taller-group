@@ -15,16 +15,16 @@
         <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
             <div class="row text-center">
                 <div class="col-md-6 mb-4">
-                    <button class="btn btn-outline-success custom-btn">
+                    <a href="{{ route('pages.turnos.produccion') }}" class="btn btn-outline-success custom-btn">
                         <img src="{{ asset('images/caballo.png') }}" alt="caballo-cabeza">
                         <p>Animales de produccion</p>
-                    </button>
+                    </a>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <button class="btn btn-outline-success custom-btn">
+                    <a href="{{ route('pages.turnos.domestico') }}" class="btn btn-outline-success custom-btn">
                         <img src="{{ asset('images/gato.png') }}" alt="gato-cabeza">
                         <p>Animales domesticos</p>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -9,38 +9,38 @@
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('principal') ? 'active' : '' }}" aria-current="page"
-                        href="principal">Principal</a>
+                        href="/principal">Principal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('tienda') ? 'active' : '' }}" href="tienda">Tienda</a>
+                    <a class="nav-link {{ request()->is('tienda') ? 'active' : '' }}" href="/tienda">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('servicios') ? 'active' : '' }}" href="servicios">Servicios</a>
+                    <a class="nav-link {{ request()->is('servicios') ? 'active' : '' }}" href="/servicios">Servicios</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Info</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item {{ request()->is('informacionContactos') ? 'active' : '' }}"
-                                href="informacionContactos">Información de contactos</a></li>
+                                href="/informacionContactos">Información de contactos</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
 
                         <li><a class="dropdown-item {{ request()->is('consultas') ? 'active' : '' }}"
-                                href="consultas">Consultas</a></li>
+                                href="/consultas">Consultas</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
 
                         <li><a class="dropdown-item {{ request()->is('comercializacion') ? 'active' : '' }}"
-                                href="comercializacion">Comercialización</a></li>
+                                href="/comercializacion">Comercialización</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
 
                         <li><a class="dropdown-item {{ request()->is('quienesSomos') ? 'active' : '' }}"
-                                href="quienesSomos">Quienes somos</a></li>
+                                href="/quienesSomos">Quienes somos</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
