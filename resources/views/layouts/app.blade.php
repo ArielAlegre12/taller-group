@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title','Huellas Felices')</title>
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     @stack('styles')
+    
+    
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include('partials.nav')
-    <main>
+
+    <main class="flex-grow-1">
         @yield('content')
     </main>
+    
     <footer class="text-center mt-5 mb-3">
         <small>@ {{ date('Y') }} - Huellas Felices</small>
     </footer>
 
      <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+     @stack('scripts')
 </body>
 </html>
