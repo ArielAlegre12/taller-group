@@ -1,5 +1,7 @@
 /*estilos para tienda*/
-
+body{
+    background: red !important;
+}
 /*contenedor del div*/
 .tienda-container{
     display: flex;
@@ -111,4 +113,47 @@
     min-width: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+/*hacer que las categorías queden fijas y los productos sean scrolleables(en pantallas chicas)*/
+@media(max-width: 992px){
+    /*layout general en columna*/
+    .tienda-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*sidebar se vuelve barra horizontal*/
+    .sidebar{
+        position: sticky;
+        top: 60px;
+        z-index: 999;
+        background: white;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .sidebar ul{
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .sidebar li{
+        flex-shrink: 0;
+        list-style: none;
+        padding: 6px 12px;
+        border-radius: 20px;
+        background: #f3f3f3;
+        font-size: 14px;
+    }
+    .sidebar li.activo{
+        background: #00a650;
+        color: white;
+    }
+    /*los productos ocupan todo*/
+    .productos{
+        width: 100%;
+    }
 }
