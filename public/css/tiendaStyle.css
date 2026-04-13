@@ -1,7 +1,5 @@
 /*estilos para tienda*/
-body{
-    background: red !important;
-}
+
 /*contenedor del div*/
 .tienda-container{
     display: flex;
@@ -11,6 +9,8 @@ body{
 
 /*sidebar*/
 .sidebar{
+    position: sticky;
+    top: 80px;
     width: 250px;
     background: #e8f5e9;
     padding: 15px;
@@ -35,6 +35,8 @@ body{
 }
 .sidebar .activo{
     background: #6f8370;
+    font-weight: bold;
+    transform: scale(1.02);
 }
 
 /*productos*/
@@ -52,7 +54,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.25s ease;
 }
 .card-producto:hover{
     transform: translateY(-5px);
@@ -126,6 +128,7 @@ body{
     /*sidebar se vuelve barra horizontal*/
     .sidebar{
         position: sticky;
+        width: 100%;
         top: 60px;
         z-index: 999;
         background: white;
