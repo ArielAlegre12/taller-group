@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <!--LOGO-->
-        <a href="#" class="navbar-brand fw-bold brand">Huellas Felices</a>
+        <a href="/principal" class="navbar-brand fw-bold brand">Huellas Felices</a>
 
         <!--TOGGLER-->
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMain">
@@ -36,9 +36,9 @@
 <nav class="subnav">
     <div class="container-fluid">
         
-        <a href="principal">Principal</a>
-        <a href="tienda">Tienda</a>
-        <a href="servicios">Servicios</a>
+        <a href="/principal">Principal</a>
+        <a href="/tienda">Tienda</a>
+        <a href="/servicios">Servicios</a>
 
         <!--dropdown menú--->
         <div class="dropdown">
@@ -47,22 +47,22 @@
 
             <ul class="dropdown-menu">
                 <li>
-                    <a href="informacionContactos" class="dropdown-item">Información de Contacto</a>
+                    <a href="/informacionContactos" class="dropdown-item">Información de Contacto</a>
                 </li>
 
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                    <a href="consultas" class="dropdown-item">Consultas</a>
+                    <a href="/consultas" class="dropdown-item">Consultas</a>
                 </li>
 
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                    <a href="comercializacion" class="dropdown-item">Comercialización</a>
+                    <a href="/comercializacion" class="dropdown-item">Comercialización</a>
                 </li>
 
-                <li><hr class="dropdown-divider"></li>
+                <li><hr class=" dropdown-divider"></li>
 
                 <li>
                     <a href=""></a>
@@ -71,13 +71,13 @@
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                    <a href="quienesSomos" class="dropdown-item">Quienes Somos</a>
+                    <a href="/quienesSomos" class="dropdown-item">Quienes Somos</a>
                 </li>
 
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                    <a href="terminosUsos" class="dropdown-item">Términos y Uso</a>
+                    <a href="/terminosUsos" class="dropdown-item">Términos y Uso</a>
                 </li>
             </ul>
         </div>
