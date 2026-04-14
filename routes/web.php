@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use PhpParser\Builder\Function_;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.principal');
 });
 
 Route::get('/principal', function () {
