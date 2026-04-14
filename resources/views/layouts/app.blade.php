@@ -17,6 +17,12 @@
 <body class="d-flex flex-column min-vh-100">
     @include('partials.nav')
 
+    <div class="header-turno">
+        <div class="container">
+            <h1 class="text-center">@yield('h1', 'Bienvenido')</h1>
+        </div>
+    </div>
+
     <main class="flex-grow-1">
         @yield('content')
     </main>

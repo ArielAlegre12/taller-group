@@ -5,13 +5,15 @@
 @endsection
 
 @section('content')
-<h2>Quiénes Somos</h2>
+    @section('h1')
+        Quiénes Somos
+    @endsection
 
-<p>Huellas Felicecs nace debido a que los profes de Taller nos pidieron hacer un proyecto. ahr</p>
+    <p>Huellas Felicecs nace debido a que los profes de Taller nos pidieron hacer un proyecto. ahr</p>
 
-<h4>Nuestro equipo</h4>
-<ul>
-    <li>Dr. Pedro Sanchéz - Veterinario</li>
-    <li>Dra. Lucrecía López - Especialista en felinos</li>
-</ul>
+    <h4>Nuestro equipo</h4>
+    <ul>
+        <li>Dr. Pedro Sanchéz - Veterinario</li>
+        <li>Dra. Lucrecía López - Especialista en felinos</li>
+    </ul>
 @endsection

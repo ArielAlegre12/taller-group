@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Bienvenido</h1>
-    <p>Página Principal.</p>
+    @section('h1')
+        Inicio
+    @endsection
+
 @endsection

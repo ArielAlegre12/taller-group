@@ -6,6 +6,10 @@
     Tienda
 @endsection
 @section('content')
+
+    @section('h1')
+        Tienda
+    @endsection
     <div class="tienda-container">
 
         <!--SIDEBAR-->

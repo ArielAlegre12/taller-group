@@ -5,11 +5,13 @@
 @endsection
 
 @section('content')
-<h2>Términos y Usos</h2>
+    @section('h1')
+        Términos y Usos
+    @endsection
 
-<p>El uso de este sitio implica la aceptación de los siguientes términos...</p>
+    <p>El uso de este sitio implica la aceptación de los siguientes términos...</p>
 
-<h4>Compras</h4>
+    <h4>Compras</h4>
 
-<p>Los productos ofrecidos son de carácter informativo...</p>
+    <p>Los productos ofrecidos son de carácter informativo...</p>
 @endsection
