@@ -1,39 +1,85 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-estilo shadow-sm sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Huellas Felices</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#huellas-felices"
-            aria-controls="huellas-felices" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!--LOGO-->
+        <a href="/principal" class="navbar-brand fw-bold brand">Huellas Felices</a>
+
+        <!--TOGGLER-->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMain">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="huellas-felices">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="principal">Principal</a>
+
+        <div class="collapse navbar-collapse" id="navMain">
+            <!--BUSCADOR--->
+            <form class="search-bar d-flex mx-auto">
+                <input type="search" placeholder="Buscar productos, servicios...">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+
+            <!--ACCIONES DE LA DERECHA-->
+            <div class="nav-actions ms-auto d-flex align-items-center gap-3">
+
+                <!--Usuario-->
+                <a href="#" class="nav-link">Ingresar</a>
+
+                <!--Carrito-->
+                <div class="cart mobile-cart">
+                    <i class="bi bi-cart"></i>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--NAV SECUNDARIO-->
+<nav class="subnav">
+    <div class="container-fluid">
+        
+        <a href="/principal">Principal</a>
+        <a href="/tienda">Tienda</a>
+        <a href="/servicios">Servicios</a>
+
+        <!--dropdown menú--->
+        <div class="dropdown">
+            
+            <a class="dropdown-toggle subnav-link" href="#" role="button" data-bs-toggle="dropdown">Info</a>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="/informacionContactos" class="dropdown-item">Información de Contacto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tienda">Tienda</a>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a href="/consultas" class="dropdown-item">Consultas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios">Servicios</a>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a href="/comercializacion" class="dropdown-item">Comercialización</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Info</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Información de contactos</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Términos y Uso</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Consultas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Quienes somos</a></li>
-                    </ul>
+
+                <li><hr class=" dropdown-divider"></li>
+
+                <li>
+                    <a href=""></a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a href="/quienesSomos" class="dropdown-item">Quienes Somos</a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a href="/terminosUsos" class="dropdown-item">Términos y Uso</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
         </div>
     </div>
 </nav>
