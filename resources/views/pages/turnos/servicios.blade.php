@@ -8,10 +8,12 @@
     Servicios de turnos
 @endsection
 
+@section('h1')
+    Servicios de Turnos
+@endsection
+
 @section('content')
-    @section('h1')
-        Servicios de Turnos
-    @endsection
+
     <div class="container-fluid mt-5">
         <div class="row text-center ">
             <div class="col-12 col-md-6 mb-2">

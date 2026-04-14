@@ -1,16 +1,19 @@
 @extends('layouts.app')
+
 @section('title')
     Turnos de produccion
 @endsection
+
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/turno_produccion.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 @endpush
-@section('content')
 
-    @section('h1')
-        Animales de producción
-    @endsection
+@section('h1')
+    Animales de producción
+@endsection
+
+@section('content')
 
     <div class="container">
         <div class="form-container">

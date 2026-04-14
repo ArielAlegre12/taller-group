@@ -1,15 +1,19 @@
 @extends('layouts.app')
+
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/tiendaStyle.css') }}">
 @endpush
+
 @section('title')
     Tienda
 @endsection
+
+@section('h1')
+    Tienda
+@endsection
+
 @section('content')
 
-    @section('h1')
-        Tienda
-    @endsection
     <div class="tienda-container">
 
         <!--SIDEBAR-->

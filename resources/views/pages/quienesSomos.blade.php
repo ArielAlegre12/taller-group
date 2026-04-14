@@ -4,10 +4,11 @@
     Quiénes Somos
 @endsection
 
+@section('h1')
+    Quiénes Somos
+@endsection
+
 @section('content')
-    @section('h1')
-        Quiénes Somos
-    @endsection
 
     <p>Huellas Felicecs nace debido a que los profes de Taller nos pidieron hacer un proyecto. ahr</p>
 

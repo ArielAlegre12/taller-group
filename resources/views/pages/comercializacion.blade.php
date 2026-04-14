@@ -4,11 +4,11 @@
     Comercialización
 @endsection
 
-@section('content')
-    @section('h1')
-        Comercialización
-    @endsection
+@section('h1')
+    Comercialización
+@endsection
 
+@section('content')
     <h4>Formas de pago</h4>
     <ul>
         <li>Tarjetas de crédito y débito</li>

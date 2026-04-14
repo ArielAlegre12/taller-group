@@ -4,11 +4,11 @@
     Consultas
 @endsection
 
-@section('content')
-    @section('h1')
-        Consultas
-    @endsection
+@section('h1')
+    Consultas
+@endsection
 
+@section('content')
 
     <select class="form-control mb-2">
         <option>Consulta general</option>

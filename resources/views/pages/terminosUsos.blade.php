@@ -4,10 +4,11 @@
     Términos y Usos
 @endsection
 
+@section('h1')
+    Términos y Usos
+@endsection
+
 @section('content')
-    @section('h1')
-        Términos y Usos
-    @endsection
 
     <p>El uso de este sitio implica la aceptación de los siguientes términos...</p>
 
