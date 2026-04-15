@@ -84,7 +84,7 @@
                     <h2 class="titulo-sobre">
                         Disponibles siempre para ayudarte
                     </h2>
-                    <p>¿Tienes alguna duda? Puedes encontrar todas las respuestas en nuestras Preguntas Frecuentes. Nos
+                    <p class="text-justify">¿Tienes alguna duda? Puedes encontrar todas las respuestas en nuestras Preguntas Frecuentes. Nos
                         comprometemos a ofrecer productos de calidad y asesoramiento personalizado, ayudando a cada cliente
                         a elegir la mejor opción para sus necesidades.</p>
                 </div>
@@ -131,7 +131,7 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">Dr. Pedro Sanchez</h5>
-                                        <p class="card-text">El Dr. Pedro Sánchez forma parte del equipo de Huellas Felices
+                                        <p class="card-text text-justify">El Dr. Pedro Sánchez forma parte del equipo de Huellas Felices
                                             y se
                                             encarga de la atención general veterinaria, brindando consultas, vacunaciones y
                                             controles sanitarios para animales domésticos. Además, participa en el área de
