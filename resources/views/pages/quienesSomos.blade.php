@@ -94,7 +94,8 @@
 
             <div class="container mt-5">
                 <div class="row g-4">
-                    <div class="col-md-6">
+                    
+                    <div class="col-md-6 d-flex">
                         <div class="card h-100">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -121,7 +122,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-flex">
                         <div class="card h-100">
                             <div class="row g-0">
                                 <div class="col-md-4">
