@@ -97,9 +97,9 @@
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="row g-0">
-                                <div class="col-md-4">
+                                <div class="img-vete col-md-4">
                                     <img src="{{ asset('images/giuli.jpeg') }}"
-                                        class="img-fluid h-100 w-100 object-fit-cover" alt="mujer-vete">
+                                        class="img-fluid w-100 h-100 object-fit-cover" alt="mujer-vete">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -124,7 +124,7 @@
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="row g-0">
-                                <div class="col-md-4">
+                                <div class="img-vete col-md-4">
                                     <img src="{{ asset('images/veterinario.jpg') }}"
                                         class="img-fluid h-100 w-100 object-fit-cover" alt="hombre-vete">
                                 </div>
