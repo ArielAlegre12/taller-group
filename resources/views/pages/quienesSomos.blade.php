@@ -99,7 +99,7 @@
                         <div class="card h-100">
                             <div class="row g-0">
                                 <div class="img-vete col-md-4">
-                                    <img src="{{ asset('images/giuli.jpeg') }}"
+                                    <img src="{{ asset('images/giuli.jpg') }}"
                                         class="img-fluid w-100 h-100 object-fit-cover" alt="mujer-vete">
                                 </div>
                                 <div class="col-md-8">
