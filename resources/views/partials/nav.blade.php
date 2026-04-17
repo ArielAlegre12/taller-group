@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <!--LOGO-->
-        Huellas Felices
+        <a href="/principal" class="navbar-brand fw-bold brand">Huellas Felices</a>
 
         <!--Carrito-->
         <div class="cart mobile-cart">
