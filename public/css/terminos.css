@@ -1,0 +1,28 @@
+.card{
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+}
+
+.card h2{
+    font-weight: bold;
+    color: #333;
+}
+
+.card h5{
+    color: #555;
+    font-weight: 600;
+}
+
+.card p{
+    color: #666;
+    text-align: justify;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+ul li{
+    margin-bottom: 5px;
+}
