@@ -1,34 +1,54 @@
-<nav class="navbar navbar-expand-lg navbar-estilo shadow-sm sticky-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
 
-        <!--LOGO-->
-        Huellas Felices
+        <!--logo-->
+        <a href="/" class="navbar navbar-brand d-flex align-items-center gap-2">
+            <div class="logo-circle">
+                <i class="bi bi-clipboard-pulse"></i>
+            </div>
+            <span class="fw semibold-text-success">Huellas Felices</span>
+        </a>
 
-        <!--Carrito-->
-        <div class="cart mobile-cart">
-            <i class="bi bi-cart"></i>
-            <span>0</span>
-        </div>
-
-        <!--TOGGLER-->
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMain">
-            <span class="navbar-toggler-icon"></span>
+        <!--btn mobile-->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-3"></i>
         </button>
 
+        <!---contenido-->
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-        <div class="collapse navbar-collapse" id="navMain">
+            <!--links-->
+            <ul class="navbar-nav mx-auto gap-lg-4 text-center">
 
-            <!--ACCIONES DE LA DERECHA-->
-            <div class="nav-actions ms-auto d-flex align-items-center gap-3">
-                <a href="/principal" class="nav-link">Principal</a>
-                <a href="/tienda" class="nav-link">Tienda</a>
-                <a href="/servicios" class="nav-link">Servicios</a>
-                <!--Usuario-->
-                <a href="#" class="btn-login">Ingresar</a>
+                <li class="nav-item">
+                    <a href="/principal" class="nav-link{{ request()->is('/') ? 'active text-sucess' : '' }}">Inicio</a>
+                </li>
 
+                <li class="nav-item">
+                    <a href="/servicios" class="nav-link{{ request()->is ? 'active text-success' : '' }}">Servicios</a>
+                </li>
 
+                <li class="nav-item">
+                    <a href="/tienda" class="nav-link{{ request()->is ? 'active text-success' : '' }}">Tienda</a>
+                </li>
+            </ul>
+
+            <!--derecha-->
+            <div class="d-flex align-items-center gap-3 justify-content-center mt-3 mt-lg-0">
+
+                <!--carrito-->
+                <div class="position-relative">
+                    <a href="#" class="text-dark fs-5">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                    <span class="cart-badge">0</span>
+                </div>
+
+                <!--btn login-->
+                <a href="#" class="btn btn-success px-4 rounded-3">
+                    Login
+                </a>
             </div>
         </div>
-
     </div>
 </nav>
