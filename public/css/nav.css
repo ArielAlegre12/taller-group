@@ -9,6 +9,9 @@
     color: white;
     font-size: 18px;
 }
+.fw{
+    color: #00a650;
+}
 
 .nav-link {
     color: #6c757d;
@@ -16,7 +19,16 @@
     transition: all 0.3s ease;
 }
 
+.nav-link.active{
+     color: #00a650 !important;
+    font-weight: 600;
+}
+
 .nav-link:hover {
+    color: #00a650;
+}
+
+.carrito:hover{
     color: #00a650;
 }
 

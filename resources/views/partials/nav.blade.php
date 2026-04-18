@@ -2,7 +2,7 @@
     <div class="container">
 
         <!--logo-->
-        <a href="/" class="navbar navbar-brand d-flex align-items-center gap-2">
+        <a href="/" class="navbar-brand d-flex align-items-center gap-2">
             <div class="logo-circle">
                 <i class="bi bi-clipboard-pulse"></i>
             </div>
@@ -21,15 +21,15 @@
             <ul class="navbar-nav mx-auto gap-lg-4 text-center">
 
                 <li class="nav-item">
-                    <a href="/principal" class="nav-link{{ request()->is('/') ? 'active text-sucess' : '' }}">Inicio</a>
+                    <a href="/principal" class="nav-link {{ request()->is('principal') ? 'active' : '' }}">Inicio</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="/servicios" class="nav-link{{ request()->is ? 'active text-success' : '' }}">Servicios</a>
+                    <a href="/servicios" class="nav-link {{ request()->is('servicios') ? 'active' : '' }}">Servicios</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="/tienda" class="nav-link{{ request()->is ? 'active text-success' : '' }}">Tienda</a>
+                    <a href="/tienda" class="nav-link {{ request()->is('tienda') ? 'active' : '' }}">Tienda</a>
                 </li>
             </ul>
 
@@ -39,7 +39,7 @@
                 <!--carrito-->
                 <div class="position-relative">
                     <a href="#" class="text-dark fs-5">
-                        <i class="bi bi-cart3"></i>
+                        <i class="carrito bi bi-cart3"></i>
                     </a>
                     <span class="cart-badge">0</span>
                 </div>

@@ -7,6 +7,7 @@
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/terminos.css') }}">
 @endpush
+
 @section('h1')
     Términos y Usos
 @endsection
@@ -19,7 +20,7 @@
         <div class="card shadow mb-4 p-4">
             <div class="d-flex align-items-center gap-2 mb-3">
                 <i class="bi bi-exclamation-circle text-success fs-4"></i>
-                <H2 class="mb-0">Introduccion</H2>
+                <h2 class="mb-0">Introduccion</h2>
             </div>
             <p>Bienvenido a Huellas Felices. Al acceder y utilizar nuestro sitio web
                 y servicios, usted acepta cumplir con los siguientes términos y condiciones.

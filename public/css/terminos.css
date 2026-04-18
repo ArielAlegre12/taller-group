@@ -19,7 +19,7 @@
     text-align: justify;
 }
 
-ul{
+.card ul{
     padding-left: 20px;
 }
 
@@ -31,7 +31,7 @@ ul li{
     background-color: #28a745 !important;
 }
 
-i {
+.card i {
     min-width: 40px;
 }
 
