@@ -46,7 +46,7 @@
                             <div class="col-md-6">
                                 <label class="form-label">Tipo de animal *</label>
                                 <select id="tipoAnimal" class="form-select">
-                                    <option>Seleccionar...</option>
+                                    <option selected disabled>Seleccionar...</option>
                                     <option value="domestico">Domestico</option>
                                     <option value="campo">Campo</option>
                                 </select>
@@ -61,9 +61,11 @@
                                 <div class="col-md-6">
                                     <label class="form-label">Especie *</label>
                                     <select class="form-select">
+                                        <option selected disabled>Seleccionar...</option>
                                         <option>Perro</option>
                                         <option>Gato</option>
                                         <option>Ave</option>
+                                        <option>Otro</option>
                                     </select>
                                 </div>
                             </div>
@@ -71,12 +73,17 @@
                             <div id="campoFields" class="d-none">
                                 <label class="form-label">Tipo de animal de campo</label>
                                 <select class="form-select">
+                                    <option selected disabled>Seleccionar...</option>
                                     <option>Bovino</option>
                                     <option>Equino</option>
                                     <option>Ovino</option>
+                                    <option>Porcino</option>
+                                    <option>Caprino</option>
+                                    <option>Otro</option>
                                 </select>
                             </div>
 
+                            <div id="domesticoFields" class="row g-3"></div>
                             <div class="col-md-6">
                                 <label class="form-label">Raza</label>
                                 <input type="text" class="form-control" placeholder="Labrador, Persa, etc.">
@@ -111,7 +118,7 @@
                             <div class="col-12">
                                 <label class="form-label">Fecha y Hora *</label>
                                 <input type="text" id="fechaHora" class="form-control"
-                                    placeholder="seleccionar fecha y Hora">
+                                    placeholder="Seleccionar fecha y Hora">
                             </div>
 
                             <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
